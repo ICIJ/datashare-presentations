@@ -1,1 +1,139 @@
-Presentation to come
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>WebSlides: Making HTML presentations easy</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+          <div class="wrap aligncenter">
+            <h1>Summary</h1>
+            <ul>
+              <li>Who</li>
+              <li>Legacy</li>
+              <li>Challenges</li>
+              <li>Datashare</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <!-- alignment [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h2>
+                <strong>Who are we</strong>
+              </h2>
+              <p>
+                <img class="avatar-40" src="https://pbs.twimg.com/profile_images/1141627893916872704/QdB94wQ1_400x400.png" alt="Avatar"> <a href="http://twitter.com/annelhote/">@annelhote</a>.
+              </p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1>Legacy</h1>
+          <ul>
+            <li>
+              Extract
+              <p>a command line tool to extract text from huge document corpus</p>
+            </li>
+            <li>
+              NLP Pipelines
+              <p>a proof of concept in java</p>
+            </li>
+            <li>
+              Knowledge Center
+              <p>a shared index based on blacklight / RoR and SolR</p>
+            </li>
+            <li>Opensource tools and frameworks</li>
+          </ul>
+          <img src="./static/gif/lego.gif" width="480" height="300" />
+        </section>
+
+        <section>
+          <h1>Issues we had to fix</h1>
+          <ul>
+            <li>UX</li>
+            <li>Scalability of SolR with millions of documents</li>
+            <li>Integration of all the tools in one</li>
+            <li>Maintainability and robustness while increasing code base</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Datashare</h1>
+          <ul>
+            <li>Where to begin ?</li>
+            <li>How many documents mention "tax avoidance" ?</li>
+            <li>How many languages are in this leaks ?</li>
+            <li>How many documents are in CSV ?</li>
+          </ul>
+        </section>
+
+      </article>
+    </main>
+
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
