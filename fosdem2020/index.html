@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
-    <title>WebSlides: Making HTML presentations easy</title>
+    <title>Datashare : journalists are researchers like any others</title>
     <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
 
     <!-- Google Fonts -->
@@ -50,12 +50,19 @@
 
     <main role="main">
       <article id="webslides" class="vertical">
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
-
+        <section class="bg-trans-dark aligncenter">
+         <span class="background light" style="background-image:url('static/images/journalism-6102.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Journalists are researchers like any others</strong></h1>
+            <p class="text-intro">
+              How we have built datashare<br>
+            </p>
+            <p>
+              Anne L'Hôte - <a href="https://twitter.com/annelhote">@annelhote</a> -  Bruno Thomas - <a href="https://twitter.com/bam_thomas">@bam_thomas</a>
+              <br/><a href="https://icij.org">International Consortium of Investigative Journalists</a>
+            </p>
+          </div>
+        </section>
         <section>
           <div class="wrap aligncenter">
             <h1>Summary</h1>
@@ -88,44 +95,65 @@
         </section>
 
         <section>
-          <h1>Legacy</h1>
-          <ul>
-            <li>
-              Extract
-              <p>a command line tool to extract text from huge document corpus</p>
-            </li>
-            <li>
-              NLP Pipelines (aka datashare)
-              <p>a proof of concept in java</p>
-            </li>
-            <li>
-              Knowledge Center
-              <p>a shared index based on blacklight / RoR and SolR</p>
-            </li>
-            <li>Opensource tools and frameworks</li>
-          </ul>
-          <img src="./static/gif/lego.gif" width="480" height="300" />
-        </section>
+           <div class="wrap size-50 aligncenter">
+             <h2><strong>Legacy</strong></h2>
+             <p class="text-intro"><i>"something held and transferred to someone as their inheritance"</i></p>
+             <div class="bg-white shadow">
+               <ul class="flexblock reasons">
+                 <li>
+                   <h2>Extract</h2>
+                   <p>a command line tool to extract text from huge document corpus based on <a href="https://tika.apache.org/">Tika</a></p>
+                 </li>
+                 <li>
+                   <h2>NLP Pipelines (aka datashare)</h2>
+                   <p>a proof of concept in java</p>
+                 </li>
+                 <li>
+                   <h2>Knowledge Center</h2>
+                   <p>a shared index based on blacklight / RoR and SolR</p>
+                 </li>
+                 <li>Opensource tools and frameworks</li>
+               </ul>
+               <img src="./static/gif/lego.gif" width="480" height="300" />
+             </div>
+           </div>
+         </section>
 
         <section>
-          <h1>Issues we had to fix</h1>
-          <ul>
-            <li>UX</li>
-            <li>Scalability of SolR with millions of documents</li>
-            <li>Integration of all the tools in one</li>
-            <li>Maintainability and robustness while increasing code base</li>
-          </ul>
-        </section>
-
-        <section>
+         <span class="background" style="background-image: url('static/images/actionvance-6Y88yhsNId8-unsplash.jpg');"></span>
+          <div class="wrap">
           <h1>Datashare</h1>
-          <ul>
-            <li>Where to begin ?</li>
-            <li>How many documents mention "tax avoidance" ?</li>
-            <li>How many languages are in this leaks ?</li>
-            <li>How many documents are in CSV ?</li>
-          </ul>
+            <ul>
+              <li>Where to begin ?</li>
+              <li>How many documents mention "tax avoidance" ?</li>
+              <li>How many languages are in this leaks ?</li>
+              <li>How many documents are in CSV ?</li>
+            </ul>
+          </div>
+          <footer>
+            <p><span class="alignright">Photo by <a href="https://unsplash.com/@actionvance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ActionVance</a> on <a href="/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+          </footer>
         </section>
+
+        <section>
+          <div class="wrap">
+            <div class="grid">
+              <div class="column">
+                <h1>Issues we had to fix</h1>
+                <p>User eXperience</p>
+                <p>Scalability of SolR with millions of documents</p>
+                <p>Migrate millions of documents into the new tool</p>
+                <p>Continue to index leaks in the new tool</p>
+                <p>Maintainability and robustness while increasing code base</p>
+              </div>
+              <div class="column">
+                <img src="static/gif/problemsolving.gif" width="500" height="400"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
       </article>
     </main>
