@@ -135,9 +135,9 @@
 
         <section id="datashare-poc">
           <div class="wrap">
-            <div class="card-60 bg-brown">
+            <div class="card-70 bg-brown">
               <figure>
-                <img src="static/images/datashare_model.png" alt="Extract">
+                <img src="static/images/datashare_model.png" alt="Datashare">
               </figure>
               <div class="flex-content">
                 <h2>
@@ -153,6 +153,31 @@
                   It was a whole workflow from filesystem scanning to NLP pipelines. It was multithreaded with a near actor model (blocking & forwarding queues) for all steps
                   (scanning, parsing, indexing, NLP pipelines) extensible to a processing distributed system based on Hazlecast. It was using Elasticsearch that has great
                   clustering features. It was implementing 5 NLP pipelines (CoreNLP, OpenNLP, IxaPipe, Mitie, GateNLP). It was packaged to be used on a standalone computer
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="kc">
+          <div class="wrap">
+            <div class="card-50 bg-apple">
+              <figure>
+                <img src="static/images/kc.png" alt="KC">
+              </figure>
+              <div class="flex-content">
+                <h2>
+                  Knowledge Center (aka KC)
+                </h2>
+                <p>An updated version of Blacklight that is a GUI on top of SolR</p>
+                <ul class="description">
+                  <li><strong class="text-label">Used on:</strong>Panama Papers (19M docs), paradise paper (10M docs), Swiss Leaks (116K docs), Luxembourg Leaks (1K docs)</li>
+                  <li><strong class="text-label">LOC (Ruby):</strong> A lot</li>
+                  <li><strong class="text-label">Website:</strong> <a href="http://projectblacklight.org/">projectblacklight.org</a></li>
+                </ul>
+                <p>
+                  "Knowledge Center" is an updated version of Blacklight. It is a ruby on rails framework on top of SolR index to build websites that needs to search on indexed data. It is used by
+                  libraries, universities, registers, etc. It has a lot of indexed data (around 35 Millions of documents), and was used by around 300 ICIJ journalists and partners on several projects.
                 </p>
               </div>
             </div>
@@ -193,8 +218,6 @@
             </div>
           </div>
         </section>
-
-
 
       </article>
     </main>
