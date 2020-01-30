@@ -58,20 +58,28 @@
               How we have built datashare<br>
             </p>
             <p>
-              Anne L'Hôte - <img class="avatar-40" src="https://pbs.twimg.com/profile_images/1141627893916872704/QdB94wQ1_400x400.png" alt="Avatar"> <a href="http://twitter.com/annelhote/">@annelhote</a> -
-              <br/>Bruno Thomas - <img class="avatar-40" src="https://www.gravatar.com/avatar/efeb34c334d2e9661fc12e1a2d691d3e?s=200" alt="Avatar"> <a href="http://twitter.com/bam_thomas/">@bam_thomas</a>
+              Anne L'Hôte <img class="avatar-40" src="https://pbs.twimg.com/profile_images/1141627893916872704/QdB94wQ1_400x400.png" alt="Avatar"> <a href="http://twitter.com/annelhote/">@annelhote</a>
+              <br/>Bruno Thomas <img class="avatar-40" src="https://www.gravatar.com/avatar/efeb34c334d2e9661fc12e1a2d691d3e?s=200" alt="Avatar"> <a href="http://twitter.com/bam_thomas/">@bam_thomas</a>
               <br/><a href="https://icij.org">International Consortium of Investigative Journalists</a>
             </p>
           </div>
         </section>
         <section>
-          <div class="wrap aligncenter">
-            <h1>Summary</h1>
-            <ul>
-              <li>Legacy</li>
-              <li>Challenges</li>
-              <li>Datashare</li>
-            </ul>
+          <div class="wrap size-50">
+            <h3>Summary</h3>
+            <hr/>
+            <ol>
+              <li><span class="chapter">Legacy</span>
+                <ol>
+                  <li><span class="chapter">Extract</span></li>
+                  <li><span class="chapter">Datashare (POC)</span></li>
+                  <li><span class="chapter">Knowledge Center</span></li>
+                </ol>
+              </li>
+              <li><span class="chapter">Datashare</span></li>
+              <li><span class="chapter">Challenges</span></li>
+              <li><span class="chapter">Conclusion</span></li>
+            </ol>
           </div>
         </section>
 
@@ -98,12 +106,41 @@
              </div>
            </div>
          </section>
+        <section id="section-74" class="slide current" style="">
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="static/images/extract.png" alt="Extract">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Extract
+                </h2>
+                <p>command line tool</p>
+                <ul class="description">
+                  <li><strong class="text-label">Used on:</strong> Panama Papers (19M docs), Swiss Leaks (116K docs) and Luxembourg Leaks (1K docs)</li>
+                  <li><strong class="text-label">LOC (Java):</strong> 10,961.</li>
+                  <li><strong class="text-label">Website:</strong> <a href="https://github.com/ICIJ/extract">github.com/ICIJ/extract</a></li>
+                </ul>
+                <p>
+                  A versatile framework that allows to scan a filesystem, enqueue paths, and extract (with Tika/tesseract) content into a document tree (for each document), then allow to "spew"
+                  extracted text into SolR, files or standard output.
+                  It has been used widely on several ICIJ stories
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
 
         <section>
          <span class="background" style="background-image: url('static/images/actionvance-6Y88yhsNId8-unsplash.jpg');"></span>
           <div class="wrap">
           <h1>Datashare</h1>
-            <p class="text-intro"><i>"should answer questions like"</i></p>
+            <p class="text-intro">should answer questions like</p>
             <ul>
               <li>Where to begin ?</li>
               <li>How many documents mention "tax avoidance" ?</li>
