@@ -106,13 +106,13 @@
              </div>
            </div>
          </section>
-        <section id="section-74" class="slide current" style="">
+
+        <section id="extract">
           <div class="wrap">
-            <div class="card-50 bg-white">
+            <div class="card-60 bg-blue">
               <figure>
                 <img src="static/images/extract.png" alt="Extract">
               </figure>
-              <!-- end figure-->
               <div class="flex-content">
                 <h2>
                   Extract
@@ -129,11 +129,34 @@
                   It has been used widely on several ICIJ stories
                 </p>
               </div>
-              <!-- end .flex-content-->
             </div>
-            <!-- .end .card50 -->
           </div>
-          <!-- .end .wrap -->
+        </section>
+
+        <section id="datashare-poc">
+          <div class="wrap">
+            <div class="card-60 bg-brown">
+              <figure>
+                <img src="static/images/datashare_model.png" alt="Extract">
+              </figure>
+              <div class="flex-content">
+                <h2>
+                  Datashare
+                </h2>
+                <p>a proof of concept that was doing extract features + NLP analysis</p>
+                <ul class="description">
+                  <li><strong class="text-label">Never used in "production"</strong></li>
+                  <li><strong class="text-label">LOC (Java):</strong> 9854.</li>
+                  <li><strong class="text-label">Website:</strong> <a href="https://github.com/ICIJ/datashare">github.com/ICIJ/datashare</a></li>
+                </ul>
+                <p>
+                  It was a whole workflow from filesystem scanning to NLP pipelines. It was multithreaded with a near actor model (blocking & forwarding queues) for all steps
+                  (scanning, parsing, indexing, NLP pipelines) extensible to a processing distributed system based on Hazlecast. It was using Elasticsearch that has great
+                  clustering features. It was implementing 5 NLP pipelines (CoreNLP, OpenNLP, IxaPipe, Mitie, GateNLP). It was packaged to be used on a standalone computer
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>
