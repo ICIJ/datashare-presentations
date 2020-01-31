@@ -1,0 +1,8 @@
+.text-white,
+.text-white a {
+    color: white !important;
+}
+
+.img {
+    height: auto !important;
+}
