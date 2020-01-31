@@ -47,7 +47,7 @@
 
         <section>
           <div class="wrap size-50">
-            <h3>Summary</h3>
+            <h2><strong>Summary</strong></h2>
             <hr/>
             <ol>
               <li><span class="chapter">Legacy</span>
@@ -94,7 +94,7 @@
           <div class="wrap">
             <div class="card-60 bg-blue">
               <figure>
-                <img src="static/images/extract.png" alt="Extract" class="img">
+                <img src="static/images/extract.png" alt="Extract" class="img-vertical">
               </figure>
               <div class="flex-content">
                 <h2>
@@ -102,9 +102,9 @@
                 </h2>
                 <p>command line tool</p>
                 <ul class="description">
-                  <li><strong class="text-label">Used on:</strong> Panama Papers (19M docs), Swiss Leaks (116K docs) and Luxembourg Leaks (1K docs)</li>
-                  <li><strong class="text-label">LOC (Java):</strong> 10,961</li>
-                  <li><strong class="text-label">Website:</strong> <a href="https://github.com/ICIJ/extract">github.com/ICIJ/extract</a></li>
+                  <li><strong class="text-label">Used on</strong> Panama Papers (19M docs), Swiss Leaks (116K docs) and Luxembourg Leaks (1K docs)</li>
+                  <li><strong class="text-label">LOC (Java)</strong> 10,961</li>
+                  <li><strong class="text-label">Website</strong> <a href="https://github.com/ICIJ/extract">github.com/ICIJ/extract</a></li>
                 </ul>
                 <p>
                   A versatile framework that allows to scan a filesystem, enqueue paths, and extract (with Tika/tesseract) content into a document tree (for each document), then allow to "spew"
@@ -117,9 +117,9 @@
 
         <section id="datashare-poc">
           <div class="wrap">
-            <div class="card-70 bg-brown">
+            <div class="card-60 bg-brown">
               <figure>
-                <img src="static/images/datashare_model.png" alt="Datashare" class="img">
+                <img src="static/images/datashare_model.png" alt="Datashare" class="img-horizontal">
               </figure>
               <div class="flex-content">
                 <h2>
@@ -128,8 +128,8 @@
                 <p>a proof of concept that was doing extract features + NLP analysis</p>
                 <ul class="description">
                   <li><strong class="text-label">Never used in "production"</strong></li>
-                  <li><strong class="text-label">LOC (Java):</strong> 9,854</li>
-                  <li><strong class="text-label">Website:</strong> <a href="https://github.com/ICIJ/datashare">github.com/ICIJ/datashare</a></li>
+                  <li><strong class="text-label">LOC (Java)</strong> 9,854</li>
+                  <li><strong class="text-label">Website</strong> <a href="https://github.com/ICIJ/datashare">github.com/ICIJ/datashare</a></li>
                 </ul>
                 <p>
                   It was a whole workflow from filesystem scanning to NLP pipelines. It was multithreaded with a near actor model (blocking & forwarding queues) for all steps
@@ -143,9 +143,9 @@
 
         <section id="kc">
           <div class="wrap">
-            <div class="card-50 bg-apple">
+            <div class="card-60 bg-apple">
               <figure>
-                <img src="static/images/kc.png" alt="KC" class="img">
+                <img src="static/images/kc.png" alt="KC" class="img-vertical">
               </figure>
               <div class="flex-content">
                 <h2>
@@ -153,9 +153,9 @@
                 </h2>
                 <p>An updated version of Blacklight that is a GUI on top of SolR</p>
                 <ul class="description">
-                  <li><strong class="text-label">Used on:</strong>Panama Papers (19M docs), paradise paper (10M docs), Swiss Leaks (116K docs), Luxembourg Leaks (1K docs)</li>
-                  <li><strong class="text-label">LOC (Ruby):</strong> A lot</li>
-                  <li><strong class="text-label">Website:</strong> <a href="http://projectblacklight.org/">projectblacklight.org</a></li>
+                  <li><strong class="text-label">Used on</strong>Panama Papers (19M docs), paradise paper (10M docs), Swiss Leaks (116K docs), Luxembourg Leaks (1K docs)</li>
+                  <li><strong class="text-label">LOC (Ruby)</strong> A lot</li>
+                  <li><strong class="text-label">Website</strong> <a href="http://projectblacklight.org/">projectblacklight.org</a></li>
                 </ul>
                 <p>
                   "Knowledge Center" is an updated version of Blacklight. It is a ruby on rails framework on top of SolR index to build websites that needs to search on indexed data. It is used by
@@ -167,9 +167,9 @@
         </section>
 
         <section>
-         <span class="background" style="background-image: url('static/images/actionvance-6Y88yhsNId8-unsplash.jpg');"></span>
+          <span class="background" style="background-image: url('static/images/actionvance-6Y88yhsNId8-unsplash.jpg');"></span>
           <div class="wrap">
-          <h1>Datashare</h1>
+            <h2><strong>Datashare</strong></h2>
             <p class="text-intro">should answer questions like</p>
             <ul>
               <li>Where to begin ?</li>
@@ -180,7 +180,7 @@
           </div>
           <footer>
             <p class="text-white">
-              <span class="alignright"><i>© Photo by <a href="https://unsplash.com/@actionvance?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ActionVance</a> on <a href="/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></i></span>
+              <span class="alignright"><i>© Photo by <a href="https://unsplash.com/@actionvance">ActionVance</a> on <a href="https://unsplash.com/">Unsplash</a></i></span>
             </p>
           </footer>
         </section>
@@ -189,12 +189,12 @@
           <div class="wrap">
             <div class="grid">
               <div class="column">
-                <h1>Issues we had to fix</h1>
-                <p>User eXperience</p>
+                <h2><strong>Issues we had to fix</strong></h2>
                 <p>Scalability of SolR with millions of documents</p>
                 <p>Migrate millions of documents into the new tool</p>
                 <p>Continue to index leaks in the new tool</p>
                 <p>Maintainability and robustness while increasing code base</p>
+                <p>User eXperience</p>
               </div>
               <div class="column">
                 <img src="static/gif/problemsolving.gif" width="500" height="400"/>
@@ -205,9 +205,9 @@
 
         <section>
           <div class="wrap">
-            <div class="card-50 bg-apple">
+            <div class="card-60 bg-apple">
               <figure>
-                <img src="static/images/datashare_architecture.png" alt="Datashare Architecture">
+                <img src="static/images/datashare_architecture.png" alt="Datashare Architecture" class="img-vertical bg-white">
               </figure>
               <div class="flex-content">
                 <h2>
@@ -215,18 +215,30 @@
                 </h2>
                 <p>Better analyze information, in all its forms</p>
                 <ul class="description">
-                  <li><strong class="text-label">Used on:</strong>All the previous and current leaks</li>
-                  <li><strong class="text-label">LOC (Java):</strong> 15,492 (src + tests)</li>
-                  <li><strong class="text-label">LOC (JS):</strong> 25,373 (src) 40,566 (tests)</li>
-                  <li><strong class="text-label">SLOC total:</strong> 92,392</li>
-                  <li><strong class="text-label">Website:</strong> <a href="http://datashare.icij.org/">datashare.icij.org</a></li>
+                  <li><strong class="text-label">Used on</strong>All the previous and current leaks</li>
+                  <li><strong class="text-label">LOC (Java)</strong> 15,492 (src + tests)</li>
+                  <li><strong class="text-label">LOC (JS)</strong> 25,373 (src) 40,566 (tests)</li>
+                  <li><strong class="text-label">SLOC total</strong> 92,392</li>
+                  <li><strong class="text-label">Website</strong> <a href="http://datashare.icij.org/">datashare.icij.org</a></li>
                 </ul>
                 <p>
-                  libraries, universities, registers, etc. It has a lot of indexed data (around 35 Millions of documents), and was used by around 300 ICIJ journalists and partners on several projects.
-                  "Datashare" is an updated version of Blacklight. It is a ruby on rails framework on top of SolR index to build websites that needs to search on indexed data. It is used by
+                  Datashare is a free open-source desktop application developed by non-profit International Consortium of Investigative Journalists (ICIJ).
+                  It allows investigative journalists to: access all their documents in one place locally on their computer while securing them from potential third-party interferences,
+                  search pdfs, images, texts, spreadsheets, slides and any files, simultaneously and automatically detect and filter by people, organizations and location
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>Let's do a demo</strong></h2>
+            <span>
+              <a href="https://datashare-demo.icij.org/" target="_blank">
+                <img src="static/images/datashare.png" alt="Datashare">
+              </a>
+            </span>
           </div>
         </section>
 
